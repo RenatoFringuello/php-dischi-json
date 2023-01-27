@@ -5,7 +5,7 @@ createApp({
       return {
         apiAddr : './server.php',
         discList : [],
-        activeCard : 0
+        activeCard : -1
       }
     },
     methods: {
