@@ -1,7 +1,3 @@
-<?php
-    include_once __DIR__.'/server.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,8 +39,5 @@
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.5/axios.min.js"></script>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="./js/script.js"></script>
 </body>
 </html>
