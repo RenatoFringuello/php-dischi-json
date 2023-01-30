@@ -4,13 +4,16 @@ createApp({
     data() {
       return {
         apiAddr : './server.php',
+        apiKey : 'hk234dbh894yh523456trf564ckjs',
         discList : [],
-        activeCard : -1
+        activeCard : -1,
       }
     },
     methods: {
         getData(){
-            axios.get(this.apiAddr)
+            axios.get(this.apiAddr, {
+                    params: { api_key: this.apiKey },
+                })
                 .then((response) => {
                     console.log(response.data);
                     this.discList = response.data;
